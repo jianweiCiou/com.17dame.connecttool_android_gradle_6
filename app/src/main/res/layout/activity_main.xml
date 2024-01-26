@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+    <TextView
+        android:id="@+id/textView_page"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:text="Page access" />
+
+    <LinearLayout
+        android:id="@+id/layout3_access"
+        android:layout_width="wrap_content"
+        android:layout_height="110px"
+        android:gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/Register_pageButton"
+        android:layout_width="133dp"
+        android:layout_height="42dp"
+        android:clickable="true"
+        android:text="開啟註冊"/>
+
+    <Button
+        android:id="@+id/Login_pageButton"
+        android:layout_width="103dp"
+        android:layout_height="42dp"
+        android:clickable="true"
+        android:text="切換帳號"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_Get_a"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:text="Get access token" />
+
+    <LinearLayout
+        android:id="@+id/layout_access"
+        android:layout_width="wrap_content"
+        android:layout_height="110px"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/getConnectAuthorizeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登入遊戲" />
+
+        <Button
+            android:id="@+id/getMeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取得用戶資訊" />
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Payment" />
+
+        <LinearLayout
+            android:id="@+id/layout_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="110px"
+            android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/rechargeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 儲值頁面" />
+
+            <Button
+                android:id="@+id/OpenConsumeSPButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消費頁面" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
