@@ -1,0 +1,1 @@
+# com.17dame.connecttool_android_gradle_6
